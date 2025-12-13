@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Fang | UX Researcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">EF</a>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="UXR_EmilyFang.pdf" target="_blank">Resume</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Emily Fang</h1>
+            <p class="hero-title">UX Researcher & Human Factors Engineer</p>
+            <p class="hero-description">
+                PhD student at NC State University specializing in Human-Computer Interaction, 
+                AR/VR experiences, and user-centered design research.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                <a href="#experience" class="btn btn-secondary">View My Work</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-shape"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a PhD student in Industrial Engineering at North Carolina State University, 
+                        focusing on <strong>Human Factors Engineering</strong> and <strong>Human-Computer Interaction</strong>. 
+                        My research explores how emerging technologies like AR and VR can enhance learning, 
+                        occupational safety, and user experience.
+                    </p>
+                    <p>
+                        With a background in mixed-methods research, I bridge the gap between qualitative 
+                        insights and quantitative data to create meaningful, user-centered solutions. 
+                        I'm passionate about making technology more intuitive and accessible.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Publications</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label">Years Research</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.0</span>
+                            <span class="stat-label">GPA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-education">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="education-details">
+                            <h4>Ph.D. in Industrial Engineering</h4>
+                            <p>North Carolina State University • 2024 – Present</p>
+                            <p class="education-focus">Human Factors & HCI</p>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fa-solid fa-book"></i></div>
+                        <div class="education-details">
+                            <h4>B.S. in Industrial Engineering</h4>
+                            <p>North Carolina State University • 2019 – 2024</p>
+                            <p class="education-focus">Minor: Supply Chain Management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Research Experience</h2>
+            <div class="timeline">
+                <!-- Project 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug 2025 – Present</span>
+                        <h3>AI-Assisted AR for Hazard Recognition</h3>
+                        <p class="timeline-role">Graduate Research Assistant</p>
+                        <ul>
+                            <li>Built AR prototype in <strong>Unity3D (C#)</strong> deployed to Meta Quest 3 using passthrough camera API</li>
+                            <li>Integrated <strong>OpenAI GPT-4o</strong> with gesture-driven UI for real-time hazard analysis</li>
+                            <li>Developed interactive checklist overlays for occupational safety training</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Unity3D</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">Meta Quest 3</span>
+                            <span class="tag">GPT-4o</span>
+                            <span class="tag">Occupational Safety</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">May 2024 – Present</span>
+                        <h3>Cognitive Effects of Video Game Tasks</h3>
+                        <p class="timeline-role">Graduate Research Assistant</p>
+                        <ul>
+                            <li>Administered 2-hour in-lab protocols conducting cognitive tests assessing selective attention, inhibitory control, and working memory</li>
+                            <li>Facilitated computer-based tasks, conducted semi-structured interviews, and collected behavioral performance, eye-tracking, and survey data (Qualtrics, PANAS, NASA-TLX) for quantitative and qualitative analysis</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Eye-Tracking</span>
+                            <span class="tag">Qualtrics</span>
+                            <span class="tag">Mixed Methods</span>
+                            <span class="tag">Cognitive Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug 2023 – Jul 2025</span>
+                        <h3><a href="https://ise.ncsu.edu/vr/scale-worlds/" target="_blank">SCALE-VR</a> (NSF Award #2055680)</h3>
+                        <p class="timeline-role">Graduate Research Assistant</p>
+                        <ul>
+                            <li>Assisted in iterative improvement of NSF-funded VR application teaching scale and numeracy</li>
+                            <li>Performed thematic analysis on formative evaluation data to improve UX</li>
+                            <li>Led outreach at NC Science Museum and underserved middle school</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">VR</span>
+                            <span class="tag">Education</span>
+                            <span class="tag">Mixed Methods</span>
+                            <span class="tag">Thematic Analysis</span>
+                            <span class="tag">Usability</span>
+                            <span class="tag">Iterative Improvement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Oct 2022 – May 2024</span>
+                        <h3>AREEA: AR for Engineering Education Advancement</h3>
+                        <p class="timeline-role">Undergraduate Research Assistant</p>
+                        <ul>
+                            <li>Mixed-methods evaluation of game-based AR app teaching statistics</li>
+                            <li>Administered validated questionnaires and conducted usability interviews</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">AR</span>
+                            <span class="tag">Education</span>
+                            <span class="tag">Mixed Methods</span>
+                            <span class="tag">Thematic Analysis</span>
+                            <span class="tag">Usability</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug 2021 – Oct 2022</span>
+                        <h3>VIA 2: Virtual Instructor Application</h3>
+                        <p class="timeline-role">Undergraduate Research Assistant</p>
+                        <ul>
+                            <li>Improved AR-based postural training tool for occupational safety</li>
+                            <li>Applied PSSUQ, Bipolar Laddering, and semi-structured interview methods</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">AR</span>
+                            <span class="tag">Mixed Methods</span>
+                            <span class="tag">Usability</span>
+                            <span class="tag">Thematic Analysis</span>
+                            <span class="tag">Iterative Improvement</span>
+                            <span class="tag">Occupational Safety</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="publications-grid">
+                <article class="publication-card">
+                    <span class="publication-year">2025</span>
+                    <h3>Study Design and Assessment Framework for Testing AR Tools in Engineering Education</h3>
+                    <p class="publication-authors">Perera, G. N., <strong>Fang, E.</strong>, Bottomley, L., Chen, K. B., & Ivy, J.</p>
+                    <p class="publication-venue">ASEE Annual Conference & Exposition</p>
+                    <ul class="publication-highlights">
+                        <li>Novel framework for longitudinal AR evaluation in STEM education</li>
+                        <li>Assessed usability, deep learning, knowledge retention & educational efficacy</li>
+                    </ul>
+                    <a href="https://peer.asee.org/57157" target="_blank" class="publication-link">View Paper →</a>
+                </article>
+
+                <article class="publication-card">
+                    <span class="publication-year">2025</span>
+                    <h3>Examining User Interactions With Signaling Elements in a VR Learning Application</h3>
+                    <p class="publication-authors"><strong>Fang, E.</strong>, Kulasingam, R., Cheng, F., Peterson, M., Delgado, C., & Chen, K. B.</p>
+                    <p class="publication-venue">Proceedings of the Human Factors and Ergonomics Society Annual Meeting</p>
+                    <ul class="publication-highlights">
+                        <li>Evaluated signaling elements in VR for improved learning outcomes</li>
+                        <li>Analyzed user interaction patterns with visual cues in immersive environments</li>
+                    </ul>
+                    <a href="https://doi.org/10.1177/10711813251360711" target="_blank" class="publication-link">View Paper →</a>
+                </article>
+
+                <article class="publication-card">
+                    <span class="publication-year">2025</span>
+                    <h3>Mental Models of Gestural Interaction for Information Processing in VR</h3>
+                    <p class="publication-authors">Cheng, F., <strong>Fang, E.</strong>, & Chen, K. B.</p>
+                    <p class="publication-venue">Proceedings of the Human Factors and Ergonomics Society Annual Meeting</p>
+                    <ul class="publication-highlights">
+                        <li>Investigated user mental models for gesture-based VR interactions</li>
+                        <li>Identified design implications for intuitive gestural interfaces</li>
+                    </ul>
+                    <a href="https://doi.org/10.1177/10711813251357931" target="_blank" class="publication-link">View Paper →</a>
+                </article>
+
+                <article class="publication-card">
+                    <span class="publication-year">2024</span>
+                    <h3>Negative Emotions From VR Usage: A Preliminary Exploratory Study Using Online Forums</h3>
+                    <p class="publication-authors"><strong>Fang, E.</strong>, Sivaramakrishnan, A., & Chen, K. B.</p>
+                    <p class="publication-venue">Proceedings of the Human Factors and Ergonomics Society Annual Meeting</p>
+                    <ul class="publication-highlights">
+                        <li>Exploratory analysis of negative emotional experiences in VR</li>
+                        <li>Qualitative analysis of user-reported issues from online communities</li>
+                    </ul>
+                    <a href="https://doi.org/10.1177/10711813241275079" target="_blank" class="publication-link">View Paper →</a>
+                </article>
+
+                <div class="publication-card">
+                    <span class="publication-year">2024</span>
+                    <h3>Study Design and Assessment Framework for Testing AR Tools in Engineering Education</h3>
+                    <p class="publication-authors">Perera, G. N., <strong>Fang, E.</strong>, Kulasingam, R., Bottomley, L., Chen, K. B., &amp; Ivy, J.</p>
+                    <p class="publication-venue">Proceedings of the Human Factors and Ergonomics Society Annual Meeting</p>
+                    <ul class="publication-highlights">
+                        <li>Novel framework for longitudinal AR evaluation in STEM education</li>
+                        <li>Assessed usability, deep learning, knowledge retention &amp; educational efficacy</li>
+                        <li>Compared game-based AR learning with traditional classroom settings</li>
+                    </ul>
+                    <a href="#" class="publication-link">View Publication →</a>
+                </div>
+
+                <div class="publication-card">
+                    <span class="publication-year">2022</span>
+                    <h3>Augmented Reality (AR) Posture Training for Manual Material Handling: Iterative Design, Evaluation, and Recommendation for AR Interface</h3>
+                    <p class="publication-authors">Chen, K., Perera, G., <strong>Fang, E.</strong>, &amp; Chen, K. B.</p>
+                    <p class="publication-venue">Proceedings of the Human Factors and Ergonomics Society Annual Meeting</p>
+                    <ul class="publication-highlights">
+                        <li>Designed Virtual Instructor Application (VIA) for MMH posture training</li>
+                        <li>Iterative usability testing with 10 participants experienced in MMH</li>
+                        <li>Framework applicable to future AR-based training program design</li>
+                    </ul>
+                    <a href="#" class="publication-link">View Publication →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards">
+        <div class="container">
+            <h2 class="section-title">Awards & Recognition</h2>
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <h3>NIOSH Graduate Fellowship</h3>
+                    <p>North Carolina State University 2025 – Present</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon"><i class="fa-solid fa-medal"></i></div>
+                    <h3>Provost's Doctoral Fellowship</h3>
+                    <p>North Carolina State University 2024 – 2025</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon"><i class="fa-solid fa-star"></i></div>
+                    <h3>Graduate Merit Award</h3>
+                    <p>North Carolina State University 2024 – 2025</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon"><i class="fa-solid fa-award"></i></div>
+                    <h3>IISE Student of the Year</h3>
+                    <p>Applied Ergonomics Conference 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Technical Tools</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">R Studio</span>
+                        <span class="skill-tag">Unity3D</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Qualtrics</span>
+                        <span class="skill-tag">Dedoose</span>
+                        <span class="skill-tag">NVivo</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Research Methods</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Mixed Methods</span>
+                        <span class="skill-tag">Experimental Design</span>
+                        <span class="skill-tag">Thematic Analysis</span>
+                        <span class="skill-tag">Usability Analysis</span>
+                        <span class="skill-tag">User-Centered Design</span>
+                        <span class="skill-tag">Qualitative Analysis</span>
+                        <span class="skill-tag">Quantitative Analysis</span>
+                        <span class="skill-tag">Iterative Improvement</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Languages</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">English (Native)</span>
+                        <span class="skill-tag">Mandarin (Native)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-intro">
+                Interested in collaborating on research or discussing UX? I'd love to hear from you.
+            </p>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>Location</h3>
+                    <p>Raleigh, NC</p>
+                </div>
+                <a href="mailto:efang2@ncsu.edu" class="contact-card">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>efang2@ncsu.edu</p>
+                </a>
+                <a href="https://linkedin.com/in/ehfang/" target="_blank" class="contact-card">
+                    <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/ehfang</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Emily Fang</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
