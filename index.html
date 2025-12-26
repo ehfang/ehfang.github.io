@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Dark/Light Mode Toggle -->
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
-        <i class="fas fa-moon" id="theme-icon"></i>
-    </button>
-
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+    
+    <!-- Noise texture overlay -->
+    <div class="noise-overlay"></div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">EF</a>
+            <a href="#" class="nav-logo"><span class="logo-bracket">{</span>EF<span class="logo-bracket">}</span></a>
             <ul class="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -28,6 +28,10 @@
                 <li><a href="UXR_EmilyFang.pdf" target="_blank">Resume</a></li>
                 <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
+            <!-- Dark/Light Mode Toggle -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
             <button class="hamburger" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -38,28 +42,56 @@
 
     <!-- Hero Section -->
     <header class="hero">
+        <div class="hero-grid-lines"></div>
         <div class="hero-content">
-            <p class="hero-greeting">Hello, I'm</p>
-            <h1 class="hero-name">Emily Fang</h1>
-            <p class="hero-title">UX Researcher & Human Factors Engineer</p>
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text">Open to collaborations</span>
+            </div>
+            <h1 class="hero-name">
+                <span class="name-line">Emily</span>
+                <span class="name-line name-accent">Fang</span>
+            </h1>
+            <div class="hero-title-row">
+                <span class="title-decorator">&lt;/&gt;</span>
+                <p class="hero-title">UX Researcher & Human Factors Engineer</p>
+            </div>
             <p class="hero-description">
-                PhD student at NC State University specializing in Human-Computer Interaction, 
-                AR/VR experiences, and user-centered design research.
+                PhD @ NC State · Building intuitive AR/VR experiences · 
+                Making tech more human through research.
             </p>
             <div class="hero-cta">
-                <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                <a href="#experience" class="btn btn-secondary">View My Work</a>
+                <a href="#contact" class="btn btn-primary">
+                    <span>Let's talk</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#experience" class="btn btn-secondary">
+                    <span>See my work</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
             </div>
         </div>
         <div class="hero-visual">
-            <div class="hero-shape"></div>
+            <div class="orbit-ring orbit-1"></div>
+            <div class="orbit-ring orbit-2"></div>
+            <div class="orbit-ring orbit-3"></div>
+            <div class="floating-icon icon-1"><i class="fa-solid fa-vr-cardboard"></i></div>
+            <div class="floating-icon icon-2"><i class="fa-solid fa-brain"></i></div>
+            <div class="floating-icon icon-3"><i class="fa-solid fa-cube"></i></div>
+        </div>
+        <div class="scroll-hint">
+            <span>scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
             <div class="about-content">
                 <div class="about-text">
                     <p>
@@ -113,8 +145,21 @@
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
+        <div class="experience-glow" id="experience-glow"></div>
+        
+        <!-- Geometric shapes scattered around -->
+        <div class="geo-shape shape-1"></div>
+        <div class="geo-shape shape-2"></div>
+        <div class="geo-shape shape-3"></div>
+        <div class="geo-shape shape-4"></div>
+        <div class="geo-shape shape-5"></div>
+        <div class="geo-shape shape-6"></div>
+        
         <div class="container">
-            <h2 class="section-title">Research Experience</h2>
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2 class="section-title">Research Experience</h2>
+            </div>
             <div class="timeline">
                 <!-- Project 1 -->
                 <div class="timeline-item">
@@ -230,7 +275,10 @@
     <!-- Publications Section -->
     <section id="publications" class="publications">
         <div class="container">
-            <h2 class="section-title">Publications</h2>
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <h2 class="section-title">Publications</h2>
+            </div>
             <div class="publications-grid">
                 <article class="publication-card">
                     <span class="publication-year">2025</span>
@@ -299,8 +347,19 @@
 
     <!-- Awards Section -->
     <section class="awards">
+        <div class="awards-glow" id="awards-glow"></div>
+        
+        <!-- Geometric shapes -->
+        <div class="geo-shape awards-shape-1"></div>
+        <div class="geo-shape awards-shape-2"></div>
+        <div class="geo-shape awards-shape-3"></div>
+        <div class="geo-shape awards-shape-4"></div>
+        
         <div class="container">
-            <h2 class="section-title">Awards & Recognition</h2>
+            <div class="section-header">
+                <span class="section-num">04</span>
+                <h2 class="section-title">Awards & Recognition</h2>
+            </div>
             <div class="awards-grid">
                 <div class="award-card">
                     <div class="award-icon"><i class="fa-solid fa-trophy"></i></div>
@@ -329,7 +388,10 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="section-header">
+                <span class="section-num">05</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+            </div>
             <div class="skills-container">
                 <div class="skills-category">
                     <h3>Technical Tools</h3>
@@ -374,10 +436,22 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
+        <div class="contact-glow" id="contact-glow"></div>
+        
+        <!-- Geometric shapes -->
+        <div class="geo-shape contact-shape-1"></div>
+        <div class="geo-shape contact-shape-2"></div>
+        <div class="geo-shape contact-shape-3"></div>
+        <div class="geo-shape contact-shape-4"></div>
+        
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
+            <div class="section-header">
+                <span class="section-num">06</span>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
             <p class="contact-intro">
-                Interested in collaborating on research or discussing UX? I'd love to hear from you.
+                Got a research idea? Want to chat about AR/VR? Or just say hi? <br>
+                <span class="highlight">I'm always up for a good conversation.</span>
             </p>
             <div class="contact-cards">
                 <div class="contact-card">
@@ -402,7 +476,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>© 2025 Emily Fang</p>
+            <p>Designed & built with <span class="heart">♥</span> by Emily Fang · 2025</p>
+            <p class="footer-note">Made with too much coffee and curiosity</p>
         </div>
     </footer>
 
