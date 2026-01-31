@@ -2,14 +2,14 @@
    CSS Variables & Reset
    ========================================== */
 :root {
-    /* Vibrant, creative color palette */
-    --primary: #00f0ff;
-    --primary-dark: #00c4cc;
-    --primary-glow: rgba(0, 240, 255, 0.4);
-    --secondary: #ff6b9d;
-    --secondary-glow: rgba(255, 107, 157, 0.4);
-    --accent: #ffd93d;
-    --accent-purple: #a855f7;
+    /* Professional, refined color palette */
+    --primary: #4db8c7;
+    --primary-dark: #3a9aa8;
+    --primary-glow: rgba(77, 184, 199, 0.25);
+    --secondary: #e88aab;
+    --secondary-glow: rgba(232, 138, 171, 0.3);
+    --accent: #d4b87a;
+    --accent-purple: #9a8bc7;
     
     /* Text colors */
     --text: #f0f0f0;
@@ -23,10 +23,10 @@
     --bg-elevated: #222230;
     
     /* Borders & Effects */
-    --border: rgba(255, 255, 255, 0.08);
-    --border-hover: rgba(0, 240, 255, 0.3);
-    --glow: 0 0 40px rgba(0, 240, 255, 0.15);
-    --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    --border: rgba(255, 255, 255, 0.1);
+    --border-hover: rgba(77, 184, 199, 0.35);
+    --glow: 0 0 30px rgba(77, 184, 199, 0.1);
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     
     /* Spacing & Sizing */
     --radius: 16px;
@@ -99,22 +99,22 @@ body {
 /* Cursor glow effect */
 .cursor-glow {
     position: fixed;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
     z-index: -1;
     transform: translate(-50%, -50%);
     transition: opacity 0.3s ease;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 /* ==========================================
    Typography
    ========================================== */
 h1, h2, h3, h4 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.02em;
@@ -243,7 +243,7 @@ body.light-mode .navbar {
 }
 
 .nav-logo {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 1.4rem;
     font-weight: 800;
     color: var(--text);
@@ -409,7 +409,7 @@ body.light-mode .navbar {
 
 .name-accent {
     color: var(--primary);
-    text-shadow: 0 0 60px var(--primary-glow);
+    text-shadow: 0 0 40px var(--primary-glow);
     animation-delay: 0.2s;
 }
 
@@ -482,8 +482,8 @@ body.light-mode .navbar {
 
 .btn-primary:hover {
     background: var(--primary-dark);
-    transform: translateY(-3px);
-    box-shadow: 0 12px 32px var(--primary-glow);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px var(--primary-glow);
 }
 
 .btn-primary:hover i {
@@ -499,7 +499,7 @@ body.light-mode .navbar {
 .btn-secondary:hover {
     border-color: var(--primary);
     color: var(--primary);
-    background: rgba(0, 240, 255, 0.05);
+    background: rgba(77, 184, 199, 0.05);
 }
 
 .btn-secondary:hover i {
@@ -672,7 +672,7 @@ body.light-mode .navbar {
 
 .stat-number {
     display: block;
-    font-family: 'Syne', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 3rem;
     font-weight: 800;
     background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -1208,12 +1208,14 @@ body.light-mode .navbar {
 .publications-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 28px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .publication-card {
     background: var(--bg-card);
-    padding: 32px;
+    padding: 44px;
     border-radius: var(--radius);
     border: 1px solid var(--border);
     display: flex;
@@ -1221,6 +1223,7 @@ body.light-mode .navbar {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    min-width: 0;
 }
 
 .publication-card::before {
@@ -1506,8 +1509,8 @@ body.light-mode .navbar {
 .skill-tag:hover {
     border-color: var(--primary);
     color: var(--primary);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px var(--primary-glow);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px var(--primary-glow);
 }
 
 /* ==========================================
