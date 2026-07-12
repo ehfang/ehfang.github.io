@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200">
+  <defs>
+    <radialGradient id="g" cx="36%" cy="52%" r="90%">
+      <stop offset="0%" stop-color="#15161c"/>
+      <stop offset="100%" stop-color="#0d0d0c"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#g)"/>
+  <rect x="24" y="24" width="752" height="1152" fill="none" stroke="#f2f0ea" stroke-opacity="0.10" stroke-width="1.5"/>
+  <text x="400.0" y="590.0" text-anchor="middle" fill="#f2f0ea" fill-opacity="0.22" font-family="IBM Plex Mono, monospace" font-size="26" letter-spacing="6">N&#176; 05</text>
+  <text x="400.0" y="628.0" text-anchor="middle" fill="#f2f0ea" fill-opacity="0.12" font-family="IBM Plex Mono, monospace" font-size="15" letter-spacing="3">PLACEHOLDER &#183; X100VI</text>
+</svg>
