@@ -1,0 +1,142 @@
+@import 'tailwindcss';
+
+/* Gate the hero parallax fragments by viewport height. Combined with the
+   md/lg width gates on the fragments themselves, this keeps them on real
+   laptops/desktops (whose usable height clears 520px even at 100% zoom on a
+   1366×768 panel) while excluding phones — portrait by width, landscape by
+   this height (no phone is ~520px tall in landscape). */
+@custom-variant tall (@media (min-height: 520px));
+
+/* ------------------------------------------------------------------ */
+/*  Switzer — self-hosted (Fontshare, ITF license)                     */
+/* ------------------------------------------------------------------ */
+@font-face {
+  font-family: 'Switzer';
+  src: url('./assets/fonts/switzer-200.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Switzer';
+  src: url('./assets/fonts/switzer-300.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Switzer';
+  src: url('./assets/fonts/switzer-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Switzer';
+  src: url('./assets/fonts/switzer-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Design tokens — dark editorial monochrome, one dusk gesture        */
+/* ------------------------------------------------------------------ */
+@theme {
+  /* surfaces */
+  --color-ink: #0a0a09;
+  --color-ink-2: #131312;
+  --color-ink-3: #1d1d1b;
+
+  /* text */
+  --color-paper: #f2f0ea;
+  --color-mist: #a6a49c;
+  --color-ash: #6e6c64;
+
+  /* hairlines — the only separation device; no box-shadows anywhere */
+  --color-line: rgb(242 240 234 / 0.14);
+  --color-line-soft: rgb(242 240 234 / 0.07);
+
+  /* the single chromatic gesture: dusk (hero + photography only) */
+  --color-dusk-indigo: #383e8c;
+  --color-dusk-ember: #b0522a;
+
+  --font-sans: 'Switzer', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', monospace;
+  /* the 方 wordmark & watermark — modern calligraphic brush */
+  --font-brush: 'Ma Shan Zheng', 'Kaiti SC', 'KaiTi', cursive;
+
+  /* one easing curve for everything */
+  --ease-editorial: cubic-bezier(0.19, 1, 0.22, 1);
+
+  --animate-scroll-line: scroll-line 2.6s var(--ease-editorial) infinite;
+  --animate-pulse-dot: pulse-dot 2.4s ease-in-out infinite;
+  --animate-spin-slow: spin 16s linear infinite;
+
+  @keyframes scroll-line {
+    0% {
+      transform: scaleY(0);
+      transform-origin: top;
+    }
+    45% {
+      transform: scaleY(1);
+      transform-origin: top;
+    }
+    55% {
+      transform: scaleY(1);
+      transform-origin: bottom;
+    }
+    100% {
+      transform: scaleY(0);
+      transform-origin: bottom;
+    }
+  }
+  @keyframes pulse-dot {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.35;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Base                                                               */
+/* ------------------------------------------------------------------ */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* clip horizontal overflow at the root so the section glows can bleed
+   vertically without ever widening the page — otherwise mobile lets you
+   pinch out past the layout into empty glow-filled space. `clip` (not
+   `hidden`) hard-clips without the viewport-propagation quirks and leaves
+   vertical scrolling untouched. */
+html,
+body {
+  overflow-x: clip;
+}
+
+body {
+  @apply bg-ink font-sans text-paper antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 1px solid var(--color-paper);
+  outline-offset: 3px;
+}
