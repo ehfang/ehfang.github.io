@@ -27,13 +27,13 @@ export function About() {
             ))}
 
             <Reveal delay={0.15}>
-              <div className="mt-14 flex gap-14 border-t border-line-soft pt-9">
+              <div className="mt-14 flex flex-wrap gap-x-10 gap-y-8 border-t border-line-soft pt-9 sm:gap-x-14">
                 {stats.map((s) => (
                   <div key={s.label}>
                     <span className="block text-5xl font-extralight tracking-[-0.02em] text-paper">
                       {s.number}
                     </span>
-                    <span className="mt-3 block font-mono text-[10.5px] tracking-[0.2em] text-ash uppercase">
+                    <span className="mt-3 block font-mono text-xs tracking-[0.2em] text-ash uppercase">
                       {s.label}
                     </span>
                   </div>
@@ -44,7 +44,7 @@ export function About() {
 
           <div>
             <Reveal>
-              <h3 className="font-mono text-[11px] tracking-[0.22em] text-ash uppercase">
+              <h3 className="font-mono text-xs tracking-[0.22em] text-ash uppercase">
                 Education
               </h3>
             </Reveal>
@@ -56,7 +56,7 @@ export function About() {
                     <p className="mt-2 text-sm font-light text-mist">
                       {e.school} · {e.dates}
                     </p>
-                    <p className="mt-3 font-mono text-[10.5px] tracking-[0.18em] text-ash uppercase">
+                    <p className="mt-3 font-mono text-xs tracking-[0.18em] text-ash uppercase">
                       {e.focus}
                     </p>
                   </div>

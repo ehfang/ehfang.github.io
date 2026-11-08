@@ -28,7 +28,7 @@ export function Photography() {
         <section className="relative overflow-hidden">
         <div className="relative z-10 mx-auto max-w-[1440px] px-6 pt-40 pb-40 md:px-10 md:pt-52 md:pb-32">
           <Reveal>
-            <p className="font-mono text-[10.5px] tracking-[0.24em] text-mist uppercase">
+            <p className="font-mono text-xs tracking-[0.24em] text-mist uppercase">
               Street &amp; travel — Fujifilm X100VI · 23mm
             </p>
           </Reveal>
@@ -39,13 +39,13 @@ export function Photography() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-8 max-w-md text-lg leading-relaxed font-light text-mist">
-              <span className="font-serif text-xl text-paper italic">
+              <span className="font-serif text-xl tracking-[0.03em] text-paper italic">
                 photographs from the street and the road
               </span>
             </p>
           </Reveal>
           <Reveal delay={0.3}>
-            <p className="mt-4 font-mono text-[10.5px] tracking-[0.22em] text-mist uppercase">
+            <p className="mt-4 font-mono text-xs tracking-[0.22em] text-mist uppercase">
               4×6 and 8×12 prints available for sale
             </p>
             <div className="mt-5 flex flex-wrap items-center gap-4">
@@ -91,7 +91,7 @@ export function Photography() {
                       className="aspect-[2/3] w-full object-cover opacity-90 transition-opacity duration-700 ease-out group-hover:opacity-100"
                     />
                   </button>
-                  <figcaption className="flex items-baseline justify-between pt-3 font-mono text-[10px] tracking-[0.18em] text-ash uppercase">
+                  <figcaption className="flex items-baseline justify-between pt-3 font-mono text-xs tracking-[0.18em] text-ash uppercase">
                     <span>{photo.caption}</span>
                     <span aria-hidden>{String(i + 1).padStart(2, '0')}</span>
                   </figcaption>

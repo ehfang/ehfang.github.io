@@ -52,7 +52,7 @@ function Fade({
 }
 
 const fragmentClass =
-  'pointer-events-none font-mono text-[10.5px] uppercase tracking-[0.24em] text-mist whitespace-nowrap'
+  'pointer-events-none font-mono text-xs uppercase tracking-[0.24em] text-mist whitespace-nowrap'
 
 /* fragments only appear with real vertical room (≥720px) so they never
    collide with the name block on short viewports */
@@ -145,7 +145,7 @@ export function FloatingHero() {
             <Rise delay={0.5}>
               <span className="flex items-baseline gap-6">
                 Fang
-                <span className="hidden font-serif text-[clamp(1.25rem,2vw,1.75rem)] tracking-normal normal-case italic text-mist sm:inline">
+                <span className="hidden font-serif text-[clamp(1.25rem,2vw,1.75rem)] tracking-[0.03em] normal-case italic text-mist sm:inline">
                   &amp; photography
                 </span>
               </span>
@@ -153,7 +153,7 @@ export function FloatingHero() {
           </h1>
 
           <Fade delay={0.75} className="mt-8 max-w-xl">
-            <p className="font-mono text-[11px] tracking-[0.22em] text-paper uppercase">
+            <p className="font-mono text-xs tracking-[0.22em] text-paper uppercase">
               {site.role}
             </p>
             <p className="mt-4 text-base leading-relaxed font-light text-mist">

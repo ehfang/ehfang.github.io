@@ -10,7 +10,7 @@ interface PillProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 }
 
 const base =
-  'inline-flex h-11 items-center gap-2.5 rounded-full px-6 font-mono text-[11px] uppercase tracking-[0.18em] transition-colors duration-500 ease-editorial'
+  'inline-flex h-11 items-center gap-2.5 rounded-full px-6 font-mono text-xs uppercase tracking-[0.18em] transition-colors duration-500 ease-editorial'
 
 const variants = {
   solid: 'bg-paper text-ink hover:bg-mist',

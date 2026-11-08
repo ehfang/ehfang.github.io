@@ -46,7 +46,7 @@ export function Service() {
         <div className="space-y-16">
           {groups.map((group, i) => (
             <Reveal key={group.title} delay={i * 0.08}>
-              <h3 className="border-t border-line-soft pt-7 font-mono text-[11px] tracking-[0.22em] text-ash uppercase">
+              <h3 className="border-t border-line-soft pt-7 font-mono text-xs tracking-[0.22em] text-ash uppercase">
                 {group.title}
               </h3>
               <div
@@ -60,7 +60,7 @@ export function Service() {
                     key={item.role}
                     className="flex h-full flex-col border-l border-line pl-6"
                   >
-                    <p className="font-mono text-[10.5px] tracking-[0.2em] text-ash uppercase">
+                    <p className="font-mono text-xs tracking-[0.2em] text-ash uppercase">
                       {item.dates}
                     </p>
                     <p className="mt-4 leading-snug font-light text-paper">

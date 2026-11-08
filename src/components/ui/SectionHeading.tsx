@@ -15,7 +15,7 @@ interface SectionHeadingProps {
 export function SectionHeading({ num, label, title, accent }: SectionHeadingProps) {
   return (
     <Reveal className="mb-14 md:mb-20">
-      <div className="flex items-baseline gap-5 font-mono text-[11px] uppercase tracking-[0.22em] text-ash">
+      <div className="flex items-baseline gap-5 font-mono text-xs uppercase tracking-[0.22em] text-ash">
         <span>{num}</span>
         <span>{label}</span>
         <span aria-hidden className="h-px flex-1 self-center bg-line-soft" />
@@ -25,7 +25,7 @@ export function SectionHeading({ num, label, title, accent }: SectionHeadingProp
         {accent && (
           <>
             {' '}
-            <span className="font-serif tracking-normal italic">{accent}</span>
+            <span className="font-serif tracking-[0.03em] italic">{accent}</span>
           </>
         )}
       </h2>

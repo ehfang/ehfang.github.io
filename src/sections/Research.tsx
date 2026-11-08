@@ -26,12 +26,12 @@ export function Research() {
               <article className="group grid gap-6 border-t border-line-soft py-12 md:grid-cols-[90px_200px_1fr] md:gap-10 md:py-16">
                 <span
                   aria-hidden
-                  className="hidden text-4xl font-extralight text-ash/60 md:block"
+                  className="hidden text-4xl font-extralight text-ash/85 md:block"
                 >
                   {String(i + 1).padStart(2, '0')}
                 </span>
 
-                <div className="font-mono text-[10.5px] leading-loose tracking-[0.18em] text-ash uppercase">
+                <div className="font-mono text-xs leading-loose tracking-[0.18em] text-ash uppercase">
                   <p>{project.dates}</p>
                   <p className="mt-1 text-mist">{project.role}</p>
                 </div>
@@ -51,7 +51,7 @@ export function Research() {
                       project.title
                     )}
                     {project.titleNote && (
-                      <span className="ml-4 align-middle font-mono text-[10.5px] tracking-[0.18em] text-ash uppercase">
+                      <span className="ml-4 align-middle font-mono text-xs tracking-[0.18em] text-ash uppercase">
                         {project.titleNote}
                       </span>
                     )}
@@ -78,6 +78,24 @@ export function Research() {
                       <Tag key={t}>{t}</Tag>
                     ))}
                   </div>
+
+                  {/* Same look as "View paper" in Publications; the padding
+                      gives a 44px tap target without changing the spacing. */}
+                  {project.links && (
+                    <div className="mt-2.5 -mb-3.5 flex flex-wrap gap-x-8">
+                      {project.links.map((link) => (
+                        <a
+                          key={link.url}
+                          href={link.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-block py-3.5 font-mono text-xs tracking-[0.18em] text-link uppercase underline decoration-link/40 underline-offset-[6px] transition-colors duration-500 ease-editorial hover:text-paper hover:decoration-paper"
+                        >
+                          {link.label} <span aria-hidden>↗</span>
+                        </a>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </article>
             </Reveal>

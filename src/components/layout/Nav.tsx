@@ -40,7 +40,7 @@ export function Nav() {
 
   const linkClass = (id: string) =>
     cn(
-      'font-mono text-[11px] uppercase tracking-[0.18em] transition-colors duration-500 ease-editorial hover:text-paper',
+      'font-mono text-xs uppercase tracking-[0.18em] transition-colors duration-500 ease-editorial hover:text-paper',
       active === id ? 'text-paper' : 'text-ash',
     )
 
@@ -75,14 +75,14 @@ export function Nav() {
             href={site.resume}
             target="_blank"
             rel="noreferrer"
-            className="font-mono text-[11px] tracking-[0.18em] text-ash uppercase transition-colors duration-500 ease-editorial hover:text-paper"
+            className="font-mono text-xs tracking-[0.18em] text-ash uppercase transition-colors duration-500 ease-editorial hover:text-paper"
           >
             Resume&thinsp;↗
           </a>
           <Link
             to={PHOTO_PATH}
             className={cn(
-              'inline-flex h-9 items-center rounded-full border px-5 font-mono text-[11px] tracking-[0.18em] uppercase transition-colors duration-500 ease-editorial',
+              'inline-flex h-9 items-center rounded-full border px-5 font-mono text-xs tracking-[0.18em] uppercase transition-colors duration-500 ease-editorial',
               onPhotography
                 ? 'border-paper bg-paper text-ink'
                 : 'border-line text-paper hover:border-paper',
@@ -154,7 +154,7 @@ export function Nav() {
                 <Link
                   to={PHOTO_PATH}
                   onClick={() => setMenuOpen(false)}
-                  className="font-serif text-4xl italic text-paper"
+                  className="font-serif text-4xl tracking-[0.03em] italic text-paper"
                 >
                   Photography
                 </Link>

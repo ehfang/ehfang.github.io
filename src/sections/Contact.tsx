@@ -5,7 +5,8 @@ import { SectionHeading } from '../components/ui/SectionHeading'
 
 const rowClass =
   'group flex flex-col gap-2 border-t border-line-soft py-9 sm:flex-row sm:items-baseline sm:justify-between'
-const labelClass = 'font-mono text-[10.5px] uppercase tracking-[0.2em] text-ash'
+const labelClass =
+  'font-mono text-xs uppercase tracking-[0.2em] text-ash md:text-[13px]'
 const valueClass =
   'text-xl font-extralight tracking-[-0.01em] text-paper transition-transform duration-700 ease-editorial md:text-3xl'
 
@@ -22,7 +23,7 @@ export function Contact() {
         <Reveal>
           <p className="max-w-xl text-lg leading-relaxed font-light text-mist">
             Got a research idea? Want to chat about AR/VR? Or just say hi?
-            <span className="mt-3 block font-serif text-xl text-paper italic">
+            <span className="mt-3 block font-serif text-xl tracking-[0.03em] text-paper italic">
               I'm always up for a good conversation.
             </span>
           </p>

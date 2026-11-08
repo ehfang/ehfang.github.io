@@ -71,14 +71,14 @@ export function Lightbox({ photos, index, onClose, onNavigate }: LightboxProps) 
       className="fixed inset-0 z-[60] flex flex-col bg-ink/97 outline-none backdrop-blur-sm"
     >
       <div className="flex items-center justify-between px-6 py-5 md:px-10">
-        <p className="font-mono text-[11px] tracking-[0.2em] text-ash uppercase">
+        <p className="font-mono text-xs tracking-[0.2em] text-ash uppercase">
           {String(index + 1).padStart(2, '0')} /{' '}
           {String(photos.length).padStart(2, '0')}
         </p>
         <button
           type="button"
           onClick={onClose}
-          className="font-mono text-[11px] tracking-[0.2em] text-mist uppercase transition-colors duration-500 ease-editorial hover:text-paper"
+          className="font-mono text-xs tracking-[0.2em] text-mist uppercase transition-colors duration-500 ease-editorial hover:text-paper"
         >
           Close ✕
         </button>
@@ -115,10 +115,10 @@ export function Lightbox({ photos, index, onClose, onNavigate }: LightboxProps) 
       </div>
 
       <div className="flex items-center justify-between px-6 py-5 md:px-10">
-        <p className="font-mono text-[10.5px] tracking-[0.18em] text-mist uppercase">
+        <p className="font-mono text-xs tracking-[0.18em] text-mist uppercase">
           {photo.caption}
         </p>
-        <p className="font-mono text-[10.5px] tracking-[0.18em] text-ash uppercase">
+        <p className="font-mono text-xs tracking-[0.18em] text-ash uppercase">
           Fujifilm X100VI
         </p>
       </div>

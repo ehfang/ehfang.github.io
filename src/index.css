@@ -51,7 +51,7 @@
   /* text */
   --color-paper: #f2f0ea;
   --color-mist: #a6a49c;
-  --color-ash: #6e6c64;
+  --color-ash: #7f7d75;
 
   /* hairlines — the only separation device; no box-shadows anywhere */
   --color-line: rgb(242 240 234 / 0.14);
@@ -60,6 +60,9 @@
   /* the single chromatic gesture: dusk (hero + photography only) */
   --color-dusk-indigo: #383e8c;
   --color-dusk-ember: #b0522a;
+
+  /* in-text links: the firefly amber from GlowField, lightened slightly */
+  --color-link: #e6b46c;
 
   --font-sans: 'Switzer', ui-sans-serif, system-ui, sans-serif;
   --font-serif: 'Instrument Serif', Georgia, serif;

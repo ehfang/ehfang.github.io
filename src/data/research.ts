@@ -9,6 +9,8 @@ export interface ResearchProject {
   /** `**bold**` spans are rendered with emphasis */
   bullets: string[]
   tags: string[]
+  /** labelled links shown under the tags, e.g. "View code on GitHub" */
+  links?: { label: string; url: string }[]
 }
 
 export const research: ResearchProject[] = [
@@ -18,10 +20,16 @@ export const research: ResearchProject[] = [
     role: 'Graduate Research Assistant',
     bullets: [
       'Built AR prototype in **Unity3D (C#)** deployed to Meta Quest 3 using passthrough camera API',
-      'Integrated **OpenAI GPT-4o** with gesture-driven UI for real-time hazard analysis',
+      'Integrated **OpenAI GPT-4o** with a hand-tracked, controller-free UI (poke and distance interaction) for real-time hazard analysis',
       'Developed interactive checklist overlays for occupational safety training',
     ],
     tags: ['Unity3D', 'C#', 'Meta Quest 3', 'GPT-4o', 'Occupational Safety'],
+    links: [
+      {
+        label: 'View code on GitHub',
+        url: 'https://github.com/ehfang/ar-hazard-recognition',
+      },
+    ],
   },
   {
     dates: 'May 2024 – Present',
@@ -66,6 +74,7 @@ export const research: ResearchProject[] = [
   {
     dates: 'Aug 2021 – Oct 2022',
     title: 'VIA 2: Virtual Instructor Application',
+    titleNote: 'NSF Award #1822477',
     role: 'Undergraduate Research Assistant',
     bullets: [
       'Improved AR-based postural training tool for occupational safety',

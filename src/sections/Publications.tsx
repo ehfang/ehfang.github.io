@@ -47,14 +47,14 @@ export function Publications() {
               <p
                 aria-hidden
                 className={cn(
-                  'pt-10 text-ash/50 md:sticky md:top-28',
+                  'pt-10 text-ash/85 md:sticky md:top-28',
                   /* A year is a numeral and carries display size; a status is
-                     words and wraps badly at that size, so it borrows the small
-                     mono label used for dates elsewhere on the page instead of
-                     being a shrunken version of the numeral. */
+                     words and wraps badly at that size, so it uses the serif
+                     italic accent from the section headings, sized to stay on
+                     one line within the 180px label column. */
                   /^\d{4}$/.test(group)
                     ? 'text-6xl font-extralight tracking-[-0.02em]'
-                    : 'font-mono text-[10.5px] tracking-[0.2em] whitespace-nowrap uppercase',
+                    : 'font-serif text-3xl tracking-[0.03em] whitespace-nowrap italic',
                 )}
               >
                 {group}
@@ -75,12 +75,12 @@ export function Publications() {
                         <Authors value={pub.authors} />
                       </p>
                       {pub.venue && (
-                        <p className="mt-2 font-mono text-[10.5px] tracking-[0.16em] text-ash uppercase">
+                        <p className="mt-2 font-mono text-xs tracking-[0.16em] text-ash uppercase">
                           {pub.venue}
                         </p>
                       )}
                       {pub.award && (
-                        <p className="mt-3 flex items-center gap-3 font-mono text-[10.5px] tracking-[0.16em] text-paper uppercase">
+                        <p className="mt-3 flex items-center gap-3 font-mono text-xs tracking-[0.16em] text-paper uppercase">
                           <span aria-hidden className="size-1.5 shrink-0 rounded-full bg-paper" />
                           {pub.award}
                         </p>
@@ -103,7 +103,7 @@ export function Publications() {
                           href={pub.url}
                           target="_blank"
                           rel="noreferrer"
-                          className="mt-6 inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.18em] text-paper uppercase transition-colors duration-500 ease-editorial hover:text-mist"
+                          className="mt-2.5 -mb-3.5 inline-block py-3.5 font-mono text-xs tracking-[0.18em] text-link uppercase underline decoration-link/40 underline-offset-[6px] transition-colors duration-500 ease-editorial hover:text-paper hover:decoration-paper"
                         >
                           View paper <span aria-hidden>↗</span>
                         </a>

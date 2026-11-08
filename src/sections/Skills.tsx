@@ -25,7 +25,7 @@ export function Skills() {
               delay={i * 0.08}
               className="mb-14 break-inside-avoid"
             >
-              <h3 className="border-t border-line-soft pt-7 font-mono text-[11px] tracking-[0.22em] text-ash uppercase">
+              <h3 className="border-t border-line-soft pt-7 font-mono text-xs tracking-[0.22em] text-ash uppercase">
                 {category.title}
               </h3>
               <div className="mt-7 flex flex-wrap gap-2.5">
