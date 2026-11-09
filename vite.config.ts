@@ -77,7 +77,7 @@ function structuredData() {
       'Virtual Reality',
       'Mixed-Methods Research',
     ],
-    sameAs: [site.linkedin, site.instagram],
+    sameAs: [site.linkedin, site.orcid, site.instagram],
   }
 
   // only published work is a ScholarlyArticle; work under review or in
@@ -139,6 +139,7 @@ ${bio}
 <li>Instagram: <a href="${esc(site.instagram)}">${esc(site.instagramHandle)}</a></li>
 <li>Resume: <a href="${stamped(RESUME_FILE, resumeVersion)}">${esc(RESUME_FILE)}</a></li>
 <li>CV: <a href="${stamped(CV_FILE, cvVersion)}">${esc(CV_FILE)}</a></li>
+<li>ORCID: <a href="${esc(site.orcid)}">${esc(site.orcidId)}</a></li>
 </ul>
 <p>This page requires JavaScript for its full interactive version.</p>
 </div>`

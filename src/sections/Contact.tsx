@@ -93,6 +93,22 @@ export function Contact() {
               </span>
             </a>
           </Reveal>
+          {/* Order runs from what a recruiter needs to what an academic
+              reader needs: reach me, where I am, resume, then the scholarly
+              record (CV, then ORCID). */}
+          <Reveal delay={0.4}>
+            <a
+              href={site.orcid}
+              target="_blank"
+              rel="noreferrer"
+              className={rowClass}
+            >
+              <span className={labelClass}>ORCID</span>
+              <span className={`${valueClass} group-hover:-translate-x-2`}>
+                {site.orcidId} <span aria-hidden className="text-ash">↗</span>
+              </span>
+            </a>
+          </Reveal>
         </div>
       </div>
     </section>

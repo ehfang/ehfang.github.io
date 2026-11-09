@@ -23,6 +23,8 @@ export const site = {
   email: 'efang2@ncsu.edu',
   linkedin: 'https://linkedin.com/in/ehfang/',
   linkedinLabel: 'linkedin.com/in/ehfang',
+  orcid: 'https://orcid.org/0009-0004-9898-4438',
+  orcidId: '0009-0004-9898-4438',
   resume: `${BASE}UXR_EmilyFang.pdf${stamp(RESUME_V)}`,
   cv: `${BASE}CV_EmilyFang.pdf${stamp(CV_V)}`,
   instagram: 'https://www.instagram.com/fang.at.f2',
